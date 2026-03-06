@@ -1,0 +1,201 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0f172a;
+color:white;
+}
+
+#particles-js{
+position:fixed;
+width:100%;
+height:100%;
+z-index:-1;
+}
+
+/* NAV */
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 10%;
+background:rgba(0,0,0,0.5);
+}
+
+nav ul{
+display:flex;
+list-style:none;
+}
+
+nav li{
+margin-left:25px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+/* HERO */
+
+.hero{
+height:90vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+.hero h1{
+font-size:60px;
+}
+
+.typing{
+color:#38bdf8;
+margin-top:10px;
+}
+
+/* SECTIONS */
+
+section{
+padding:80px 10%;
+max-width:1100px;
+margin:auto;
+}
+
+/* SKILLS */
+
+.skills-container{
+max-width:600px;
+margin:auto;
+}
+
+.skill{
+margin-bottom:20px;
+}
+
+.bar{
+background:#1e293b;
+height:10px;
+border-radius:5px;
+overflow:hidden;
+}
+
+.bar span{
+display:block;
+height:100%;
+background:#38bdf8;
+}
+
+/* PROJECTS */
+
+.projects-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.card{
+background:#1e293b;
+border-radius:10px;
+overflow:hidden;
+transition:0.3s;
+}
+
+.card img{
+width:100%;
+height:180px;
+object-fit:cover;
+}
+
+.card h3{
+padding:15px;
+}
+
+.card p{
+padding:0 15px 20px;
+}
+
+.card:hover{
+transform:translateY(-10px) scale(1.03);
+}
+
+/* SERVICES */
+
+.services-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.service{
+background:#1e293b;
+padding:20px;
+border-radius:10px;
+}
+
+/* TIMELINE */
+
+.timeline-item{
+background:#1e293b;
+padding:20px;
+margin-bottom:20px;
+border-left:4px solid #38bdf8;
+}
+
+/* CONTACT */
+
+form{
+display:flex;
+flex-direction:column;
+max-width:500px;
+margin:auto;
+}
+
+form input, form textarea{
+margin-bottom:15px;
+padding:10px;
+border:none;
+border-radius:5px;
+}
+
+button{
+padding:10px;
+border:none;
+background:#38bdf8;
+cursor:pointer;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:30px;
+background:#020617;
+margin-top:50px;
+}
+
+/* LIGHT MODE */
+
+.light{
+background:white;
+color:black;
+}
+
+.light nav a{
+color:black;
+}
+
+.light .card,
+.light .service,
+.light .timeline-item{
+background:#f1f1f1;
+}
